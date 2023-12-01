@@ -7,6 +7,8 @@ Write a function called `calculator` that takes in 2 numbers and an operator and
 ### Function Signature
 
 ```js
+
+
 /**
  * Returns the result of a calculation.
  * @param {number} num1 - The first number.
