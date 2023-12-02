@@ -1,24 +1,26 @@
-function calculator(a,b,op) {
-    let result=0;
+function calculator(num1,num2,op) {
+    let result;
     switch (op) {
         case '+':
-            result= a+b;
+            result= num1+num2;
             break;
         case '-':
-            result=a-b;
+            result=num1-num2;
             break;
         case '*':
-            result= a*b;
+            result= num1*num2;
             break;
         case '/':
-            result=a/b;
+            result=num1/num2;
             break;
         
 
     
         default:
+            throw new Error("invalid operator")
             break;
     }
+    return result;
 }
 
 module.exports = calculator;
