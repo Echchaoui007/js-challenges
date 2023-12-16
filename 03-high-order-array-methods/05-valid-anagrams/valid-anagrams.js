@@ -4,7 +4,8 @@ function validAnagrams(str1, str2) {
 
     return acc;
   }, {});
-  const freqCount2 = str2.split("").reduce((acc, char) => {
+  console.log(freqCount1);
+   const freqCount2 = str2.split("").reduce((acc, char) => {
     acc[char] = (acc[char] || 0) + 1;
 
     return acc;
@@ -12,7 +13,7 @@ function validAnagrams(str1, str2) {
 
   return Object.keys(freqCount1).every(
     (char) => freqCount1[char] === freqCount2[char]
-  );
+  ); 
 }
 
 module.exports = validAnagrams;
